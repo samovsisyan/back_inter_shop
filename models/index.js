@@ -1,5 +1,7 @@
 module.exports = {
 
-    Users: require('./Users')
+    Users: require('./Users'),
+    Peoples: require('./Peoples'),
+    Products: require('./Products')
 
 };
