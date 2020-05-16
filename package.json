@@ -10,11 +10,34 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "express-mysql-session": "^2.1.4",
+    "express-session": "^1.17.1",
     "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mariadb": "^2.3.1",
+    "md5": "^2.2.1",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.4",
+    "pug": "2.0.0-beta11",
+    "sequelize": "^5.21.9",
+    "url": "^0.11.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
-  }
+    "sequelize-cli": "^5.5.1"
+  },
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samovsisyan/back_inter_shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samovsisyan/back_inter_shop/issues"
+  },
+  "homepage": "https://github.com/samovsisyan/back_inter_shop#readme"
 }
