@@ -33,10 +33,10 @@ Users.init({
 
     },
 
-    role: {
-        type: Sequelize.ENUM('admin', 'manager', 'shipper'),
-        allowNull: false,
-    }
+    // role: {
+    //     type: Sequelize.ENUM('admin', 'manager', 'shipper'),
+    //     allowNull: false,
+    // }
 
 }, {
     sequelize,
