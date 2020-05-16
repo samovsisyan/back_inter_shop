@@ -6,35 +6,20 @@ const md5 = require('md5');
 
 const router = express.Router();
 
-router.post('/login', async (req, res, next) => {
-  try {
-    const {username, password} = req.body;
-    if (username && password) {
-      const user = await models.Users.findOne({
-        where: {
-          username: username,
-          password: md5(password)
-        }
-      });
-
-      if (user) {
-        const token = jwt.sign({userId: user.id, userRole: user.role}, jwtSecret);
-        return res.send({
-          status: 'ok',
-          token: token,
-          user,
-        })
-      }
-
-    }
-
-    res.status(401).send({
-      status: 'error',
-      message: 'Invalid username or password'
+router.get('/', async (req, res, next) => {
+  try{
+    const Users = await models.Users.findAll();
+    res.json({
+      status: 'ok',
+      Users,
     })
-  } catch (e) {
+  }catch (e) {
     next(e)
   }
-});
+})
+
+
+
+
 
 module.exports = router;
