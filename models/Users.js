@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../services/database');
-const md5 = require('md5');
 
 class Users extends Sequelize.Model {
 
@@ -17,7 +16,6 @@ Users.init({
     username: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: 'username'
     },
     password: {
         type: Sequelize.STRING,
@@ -27,18 +25,16 @@ Users.init({
     email: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: 'email'
 
     },
     peopleId: {
         type: Sequelize.STRING,
         allowNull: false,
-        field: 'people_id',
-        key: 'people_id',
+
     },
 
     role: {
-        type: Sequelize.ENUM('admin', 'manager', 'payer'),
+        type: Sequelize.ENUM('admin', 'manager', 'shipper'),
         allowNull: false,
     }
 
