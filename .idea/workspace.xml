@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e45ac9a6-e6f9-49a6-9de3-afda6411c649" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/models/Peoples.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Peoples.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/products.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../utilities-back" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,7 +83,8 @@
       <workItem from="1589485738468" duration="1361000" />
       <workItem from="1589558324023" duration="304000" />
       <workItem from="1589563494559" duration="101000" />
-      <workItem from="1589593530905" duration="627000" />
+      <workItem from="1589593530905" duration="2881000" />
+      <workItem from="1589635057226" duration="600000" />
     </task>
     <servers />
   </component>
@@ -100,9 +104,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1589593535707">
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1589594482683">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1589593535707" />
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1589594482683" />
+    <state x="410" y="136" width="618" height="522" key="find.popup" timestamp="1589596155109">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="410" y="136" width="618" height="522" key="find.popup/72.27.1294.741@72.27.1294.741" timestamp="1589596155109" />
   </component>
 </project>
