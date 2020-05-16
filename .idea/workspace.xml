@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e45ac9a6-e6f9-49a6-9de3-afda6411c649" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/models/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Peoples.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Peoples.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <workItem from="1589485738468" duration="1361000" />
       <workItem from="1589558324023" duration="304000" />
       <workItem from="1589563494559" duration="101000" />
-      <workItem from="1589593530905" duration="305000" />
+      <workItem from="1589593530905" duration="627000" />
     </task>
     <servers />
   </component>
