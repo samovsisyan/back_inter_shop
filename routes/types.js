@@ -66,5 +66,22 @@ router.post('/', async (req, res, next) => {
 });
 
 
+router.delete('/', async (req, res, next) => {
+    try {
+        const paramId = req.param('id');
+        await models.Types.destroy({
+            where: {
+                "id": paramId
+            }
+        });
+        res.json({
+            status: 'ok',
+        })
+    } catch (e) {
+        next(e)
+    }
+});
+
+
 
 module.exports = router;
