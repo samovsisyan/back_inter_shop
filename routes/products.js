@@ -39,6 +39,34 @@ router.put('/', async (req, res, next) => {
 });
 
 
+router.post('/', async (req, res, next) => {
+    try {
+        const {
+            id,
+            name,
+            weight,
+            size,
+        } = req.body;
+        await models.Products.update({
+            name,
+            weight,
+            size,
+        }, {where: {id}});
+        res.json({
+            status: 'ok',
+            products: {
+                id,
+                name,
+                weight,
+                size,
+            },
+        })
+    } catch (e) {
+        next(e)
+    }
+});
+
+
 
 
 
