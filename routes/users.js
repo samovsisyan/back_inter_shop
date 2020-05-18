@@ -70,7 +70,21 @@ router.post('/', async (req, res, next) => {
   }
 });
 
-
+router.delete('/', async (req, res, next) => {
+  try {
+    const paramId = req.param('id');
+    await models.Users.destroy({
+      where: {
+        "id": paramId
+      }
+    });
+    res.json({
+      status: 'ok',
+    })
+  } catch (e) {
+    next(e)
+  }
+});
 
 
 
