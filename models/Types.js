@@ -24,11 +24,6 @@ Types.init({
         allowNull: false
     },
 
-    unit: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-
     price: {
         type: Sequelize.STRING,
         allowNull: false
