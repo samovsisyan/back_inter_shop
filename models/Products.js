@@ -18,6 +18,16 @@ Products.init({
         allowNull: false,
     },
 
+    weight: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    
+    size: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+
 
 
 }, {

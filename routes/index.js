@@ -3,5 +3,6 @@ module.exports = {
   regions: require('./regions'),
   peoples: require('./peoples'),
   types: require('./types'),
+  products: require('./products'),
 };
 
