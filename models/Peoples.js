@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../services/database');
-const Users = require('./Users');
+// const Users = require('./Users');
 
 class Peoples extends Sequelize.Model {
 
@@ -51,15 +51,6 @@ Peoples.init({
     timestamps: false
 });
 
-
-// Peoples.belongsTo(Users, {
-//     foreignKey: 'people_id',
-//     as: 'people_id'
-// });
-Peoples.hasMany(Users, {
-    foreignKey: 'people_id',
-
-});
 
 Peoples.sync();
 

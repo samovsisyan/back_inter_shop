@@ -57,7 +57,7 @@ router.post('/', async (req, res, next) => {
             region_id,
             address,
         } = req.body;
-        const people = await models.Peoples.update({
+        await models.Peoples.update({
             name,
             l_name,
             m_name,

@@ -27,16 +27,14 @@ Users.init({
         allowNull: false,
 
     },
-    peopleId: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        field: 'people_id',
-        key: 'people_id',
 
-    },
     role: {
-        type: Sequelize.ENUM('admin', 'manager', 'shipper'),
+        // type: Sequelize.ENUM('admin', 'manager', 'shipper'),
+        // allowNull: false,
+        type: Sequelize.STRING,
+        // type: Sequelize.ENUM('admin', 'user'),
         allowNull: false,
+        defaultValue: "user",
     }
 
 }, {
