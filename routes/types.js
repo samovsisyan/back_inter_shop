@@ -16,7 +16,26 @@ router.get('/', async (req, res, next) => {
     }
 })
 
-
+router.put('/', async (req, res, next) => {
+    try {
+        const {
+            name,
+            short_name,
+            price,
+        } = req.body;
+        const type = await models.Types.create({
+            name,
+            short_name,
+            price,
+        });
+        res.json({
+            status: 'ok',
+            type,
+        })
+    } catch (e) {
+        next(e)
+    }
+});
 
 
 
