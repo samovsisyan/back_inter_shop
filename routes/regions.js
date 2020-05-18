@@ -35,5 +35,27 @@ router.put('/', async (req, res, next) => {
     }
 });
 
+router.post('/', async (req, res, next) => {
+    try {
+        const {
+            id,
+            region_name,
+        } = req.body;
+        await models.Regions.update({
+            region_name,
+        }, {where: {id}});
+        res.json({
+            status: 'ok',
+            regions: {
+                id,
+                region_name,
+            },
+        })
+    } catch (e) {
+        next(e)
+    }
+});
+
+
 
 module.exports = router;
