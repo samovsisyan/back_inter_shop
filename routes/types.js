@@ -38,5 +38,33 @@ router.put('/', async (req, res, next) => {
 });
 
 
+router.post('/', async (req, res, next) => {
+    try {
+        const {
+            id,
+            name,
+            short_name,
+            price,
+        } = req.body;
+        await models.Types.update({
+            name,
+            short_name,
+            price,
+        }, {where: {id}});
+        res.json({
+            status: 'ok',
+            types: {
+                id,
+                name,
+                short_name,
+                price,
+            },
+        })
+    } catch (e) {
+        next(e)
+    }
+});
+
+
 
 module.exports = router;
