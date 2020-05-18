@@ -1,8 +1,8 @@
 const express = require('express');
 const models = require('../models');
-
-
 const router = express.Router();
+
+
 
 router.get('/', async (req, res, next) => {
   try{
@@ -15,7 +15,6 @@ router.get('/', async (req, res, next) => {
     next(e)
   }
 })
-
 
 router.put('/', async (req, res, next) => {
   try {
@@ -39,6 +38,7 @@ router.put('/', async (req, res, next) => {
     next(e)
   }
 });
+
 
 router.post('/', async (req, res, next) => {
   try {
@@ -64,22 +64,6 @@ router.post('/', async (req, res, next) => {
         email,
         role,
       },
-    })
-  } catch (e) {
-    next(e)
-  }
-});
-
-router.delete('/', async (req, res, next) => {
-  try {
-    const paramId = req.param('id');
-    await models.Users.destroy({
-      where: {
-        "id": paramId
-      }
-    });
-    res.json({
-      status: 'ok',
     })
   } catch (e) {
     next(e)
