@@ -1,29 +1,15 @@
 const express = require('express');
 const models = require('../models');
 const router = express.Router();
-const LIMIT = 20;
 
 router.get('/', async (req, res, next) => {
-    try {
-        const page = req.query.page || 1;
-        const peoples =
-            await models.Peoples.findAll(
-                {
-                    offset: LIMIT * page - LIMIT,
-                    limit: LIMIT,
-                    include:
-                        [{model: models.Regions}],
-                }
-            );
-        const total = await models.Peoples.count();
+    try{
+        const Peoples = await models.Peoples.findAll();
         res.json({
             status: 'ok',
-            peoples,
-            page,
-            total,
-            totalPage: Math.ceil(total / LIMIT),
+            Peoples,
         })
-    } catch (e) {
+    }catch (e) {
         next(e)
     }
 });

@@ -7,13 +7,13 @@ function authorization(req, res, next) {
     return next()
   }
 
-  const pathname = url.parse(req.url).pathname;
-  if (pathname !== '/users/login') {
-    const token = req.headers['authorization'];
-    const decoded = jwt.verify(token, jwtSecret);
-    req.userId = decoded.userId;
-    req.userRole = decoded.userRole;
-  }
+  // const pathname = url.parse(req.url).pathname;
+  //   if (pathname !== '/users/login') {
+  //   const token = req.headers['authorization'];
+  //   const decoded = jwt.verify(token, jwtSecret);
+  //   req.userId = decoded.userId;
+  //   req.userRole = decoded.userRole;
+  // }
 
 
 
