@@ -17,6 +17,28 @@ router.get('/', async (req, res, next) => {
 })
 
 
+router.put('/', async (req, res, next) => {
+    try {
+        const {
+            name,
+            weight,
+            size,
+        } = req.body;
+        const product = await models.Products.create({
+            name,
+            weight,
+            size,
+        });
+        res.json({
+            status: 'ok',
+            product,
+        })
+    } catch (e) {
+        next(e)
+    }
+});
+
+
 
 
 
